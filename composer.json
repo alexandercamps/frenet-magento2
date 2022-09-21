@@ -28,9 +28,6 @@
         "phpmd/phpmd": "@stable",
         "phpunit/phpunit": "^9"
     },
-    "allow-plugins": {
-            "magento/composer-dependency-version-audit-plugin": true
-     },
     "license": "proprietary",
     "suggest": {},
     "type": "magento2-module",
@@ -72,5 +69,10 @@
             "@phpcs-configure",
             "vendor/bin/phpcs --standard=Magento2 --severity=8 --extensions=php Service Model Setup Controller Block ViewModel"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "magento/composer-dependency-version-audit-plugin": true
+        }
     }
 }
