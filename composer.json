@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "php": "^7.0",
+        "php": "^7.0|>=8.0",
         "frenet/frenet-php": "^1.1.0",
         "symfony/finder": "^v5.0.0",
         "magento/framework": "^101.0.0|^102.0.0|^103.0.0",
@@ -26,7 +26,7 @@
         "magento/magento-coding-standard": "~4.0.0",
         "magento/magento2-functional-testing-framework": "*",
         "phpmd/phpmd": "@stable",
-        "phpunit/phpunit": "~6.5.0"
+        "phpunit/phpunit": "^9"
     },
     "license": "proprietary",
     "suggest": {},
@@ -69,5 +69,10 @@
             "@phpcs-configure",
             "vendor/bin/phpcs --standard=Magento2 --severity=8 --extensions=php Service Model Setup Controller Block ViewModel"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "magento/composer-dependency-version-audit-plugin": true
+        }
     }
 }
