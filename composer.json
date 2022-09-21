@@ -26,7 +26,7 @@
         "magento/magento-coding-standard": "~4.0.0",
         "magento/magento2-functional-testing-framework": "*",
         "phpmd/phpmd": "@stable",
-        "phpunit/phpunit": "~6.5.0"
+        "phpunit/phpunit": "^9"
     },
     "license": "proprietary",
     "suggest": {},
